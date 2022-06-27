@@ -11,6 +11,7 @@ img {
     width: 100%;
     object-position: center;
     border-radius: 15px;
+    display: none;
 }   
 
 
