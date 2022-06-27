@@ -23,13 +23,8 @@ img {
     display: block;
 }
 
-.bi-arrow-left-circle-fill {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    border-radius: 50%;
+#prev {
     text-align: center;
-    padding: 3px 0;
     position: absolute;
     top: 50%;
     left: -10%;
@@ -37,15 +32,14 @@ img {
     
 }
 
-.bi-arrow-right-circle-fill {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    border-radius: 50%;
+#next {
     text-align: center;
-    padding: 3px 0;
     position: absolute;
     top: 50%;
     right: -10%;
     cursor: pointer;
+}
+
+.bi {
+    font-size: 50px;
 }

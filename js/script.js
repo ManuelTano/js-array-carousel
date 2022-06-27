@@ -24,5 +24,38 @@ let currentActiveIndex = 0;
 
 imgElements[currentActiveIndex].classList.add('active');
 
+// MILESTONE 3
 
+const btnNext = document.getElementById('next');
+const btnPrev = document.getElementById('prev');
+
+btnPrev.addEventListener('click', function() {
+
+    imgElements[currentActiveIndex].classList.remove('active');
+
+
+    if (!currentActiveIndex == 0 ) {
+        currentActiveIndex--; 
+    } else {
+        currentActiveIndex = imgElements.length - 1;
+    }
+
+    imgElements[currentActiveIndex].classList.add('active');
+
+});
+
+btnNext.addEventListener('click', function() {
+    
+    imgElements[currentActiveIndex].classList.remove('active');
+
+
+    if (currentActiveIndex < imgElements.length - 1) {
+        currentActiveIndex++;
+    } else {
+        currentActiveIndex = 0;
+    }
+
+    imgElements[currentActiveIndex].classList.add('active');
+
+});
 
