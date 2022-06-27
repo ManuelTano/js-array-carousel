@@ -15,7 +15,7 @@ img {
 }   
 
 
-.gallery {
+#carosel {
     position: relative;
 }
 
@@ -23,7 +23,7 @@ img {
     display: block;
 }
 
-.prev {
+.bi-arrow-left-circle-fill {
     width: 50px;
     height: 50px;
     font-size: 25px;
@@ -37,7 +37,7 @@ img {
     
 }
 
-.next {
+.bi-arrow-right-circle-fill {
     width: 50px;
     height: 50px;
     font-size: 25px;
