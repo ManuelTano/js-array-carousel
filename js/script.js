@@ -33,10 +33,10 @@ btnPrev.addEventListener('click', function() {
 
     imgElements[currentActiveIndex].classList.remove('active');
 
+    currentActiveIndex--; 
 
-    if (!currentActiveIndex == 0 ) {
-        currentActiveIndex--; 
-    } else {
+    if (currentActiveIndex < 0) {
+    
         currentActiveIndex = imgElements.length - 1;
     }
 
@@ -48,10 +48,10 @@ btnNext.addEventListener('click', function() {
     
     imgElements[currentActiveIndex].classList.remove('active');
 
+    currentActiveIndex++;
 
-    if (currentActiveIndex < imgElements.length - 1) {
-        currentActiveIndex++;
-    } else {
+    if (currentActiveIndex === imgElements.length) {
+   
         currentActiveIndex = 0;
     }
 
